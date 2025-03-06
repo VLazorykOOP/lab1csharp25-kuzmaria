@@ -6,7 +6,6 @@ namespace TriangleAreaAndDivisibility
     {
         static void Main()
         {
-            // Виведення меню для вибору
             Console.WriteLine("Оберіть програму для запуску:");
             Console.WriteLine("1 - Обчислення площі трикутника");
             Console.WriteLine("2 - Перевірка кратності числу суми цифр");
@@ -15,10 +14,9 @@ namespace TriangleAreaAndDivisibility
             Console.WriteLine("5 - Обчислення квадрата частки двох чисел");
             Console.WriteLine("6 - Обчислення виразу для m та n");
 
-            // Зчитування вибору користувача
-            string? choice = Console.ReadLine();  // Використовуємо nullable string
+            string? choice = Console.ReadLine();  
 
-            if (choice != null)  // Перевіряємо на null перед використанням
+            if (choice != null)  
             {
                 if (choice == "1")
                 {
@@ -34,17 +32,14 @@ namespace TriangleAreaAndDivisibility
                 }
                 else if (choice == "4")
                 {
-                    // Викликаємо функцію для перевірки розкладу лікаря
                     DoctorScheduleApp.DoctorSchedule.CheckSchedule();
                 }
                 else if (choice == "5")
                 {
-                    // Викликаємо функцію для обчислення квадрата частки
                     MathHelper.SquareOfQuotient();
                 }
                 else if (choice == "6")
                 {
-                    // Викликаємо функцію для обчислення виразу для m та n
                     ExpressionCalculator.ExpressionEvaluator.CalculateExpression();
                 }
                 else
